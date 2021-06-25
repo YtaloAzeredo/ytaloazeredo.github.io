@@ -10,7 +10,7 @@ main h1
 }
 main 
 {
-    background-image: url(/ytaloazeredo.github.io/img/fundo2.jpg);
+    background-image: url(/img/fundo2.jpg);
     background-attachment: scroll;
  
 }
@@ -25,6 +25,6 @@ article p
 }
 body
 {
-    background-image: url(/ytaloazeredo.github.io/img/fundo.gif);
+    background-image: url(/img/fundo.gif);
     background-attachment: fixed;
 }
