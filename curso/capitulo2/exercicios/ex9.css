@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+h1, h2,p {
+    color: white;
+}
+main h1
+{
+    color:yellowgreen;
+    font-family: 'Dancing Script', cursive;
+}
+main 
+{
+    background-image: url(/ytaloazeredo.github.io/img/fundo2.jpg);
+    background-attachment: scroll;
+ 
+}
+article
+{
+    background-color: rgb(40, 112, 112);
+}
+article p
+{
+    color: rgb(238, 154, 129);
+    text-align: center;
+}
+body
+{
+    background-image: url(/ytaloazeredo.github.io/img/fundo.gif);
+    background-attachment: fixed;
+}
