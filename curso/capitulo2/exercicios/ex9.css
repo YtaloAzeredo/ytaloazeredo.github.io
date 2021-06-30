@@ -27,6 +27,15 @@ footer a
 {
     color: white;
 }
+footer a:hover
+{
+    color: violet;
+    background-color: lightgray;
+}
+footer a:active
+{
+    color:red;
+}
 body
 {
     background-image: url(/img/fundo.gif);
