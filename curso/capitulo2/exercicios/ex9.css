@@ -23,12 +23,12 @@ article p
     color: rgb(238, 154, 129);
     text-align: center;
 }
+footer a
+{
+    background-color: white;
+}
 body
 {
     background-image: url(/img/fundo.gif);
     background-attachment: fixed;
-}
-footer 
-{
-    background-color: white;
 }
