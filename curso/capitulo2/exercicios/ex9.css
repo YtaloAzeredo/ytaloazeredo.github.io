@@ -28,7 +28,7 @@ body
     background-image: url(/img/fundo.gif);
     background-attachment: fixed;
 }
-footer a
+footer 
 {
     background-color: white;
 }
