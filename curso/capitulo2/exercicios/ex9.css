@@ -29,7 +29,7 @@ footer a
 }
 footer a:hover
 {
-    color: violet;
+    color: black;
     background-color: lightgray;
 }
 footer a:active
