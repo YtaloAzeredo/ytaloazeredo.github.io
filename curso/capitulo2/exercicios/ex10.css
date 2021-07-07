@@ -3,38 +3,32 @@
 {
     margin: 40px 40px 70px 40px;
     padding: 10px;
-    min-height: 450px;
-    max-height: 450px;
+    min-height: 487px;
+    max-height: 487px;
     min-width: 1270px;
     max-width: 1270px;
+    position: relative;
 }
-
-header h1, footer
+header
 {
     background-color: gray;
+}
+header h1, footer
+{
     color: white;
-    display: inline-table;
     width: 1300px;
-    margin: -5px -5px;
+    margin: -6px 4px;
     padding: 5px 10px;
-    
 }
 
 nav
 {
-    display:inline-block;
     height: 425px;
-    width: 154px;
-    margin-top: -19px;
+    width: 137px;
+    margin-top: -20px;
     position:absolute;
-    left: 58px;
-    top: 195.067px;
-}
-
-nav ul
-{
-    margin: 30px 8px 15px 0px;
-    padding: 0px 0px 0px 42px;
+    left: 11px;
+    top: 69.067px;
 }
 
 nav li
@@ -44,8 +38,8 @@ nav li
     width: 110px;
     text-align: left;
     list-style: none;
-    margin: 2px 0px 0px -30px;
-    padding: 20px 5px 5px 15px;
+    margin: 2px 0px 0px -33px;
+    padding: 13px 0px 4px 14px;
 }
 
 nav a
@@ -54,21 +48,30 @@ nav a
     text-decoration: none;
     font-family: sans-serif;
     font-size: 15px;
-    
 }
-
 
 #principal
 {
-    display:inline-block;
     text-align: left;
-    height: 410px;
+    height: 397px;
     width: 1100px;
     border-left: solid 1px gray;
-    padding: 10px 10px 25px 20px;
-    margin: 0px 0px 0px 150px;
+    position: absolute;
+    left: 148px;
+    top: 51px;
+    padding: 18px;
+}
+section#principal h2
+{
+    margin-top: 10px;
 }
 
+footer
+{
+    background-color: gray;
+    position: absolute;
+    bottom: 0px;
+}
 
 nav li:hover
 {
