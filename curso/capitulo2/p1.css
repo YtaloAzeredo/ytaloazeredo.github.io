@@ -1,0 +1,196 @@
+body
+{
+    background-image: linear-gradient(to bottom right,aquamarine, yellow, darkred);
+    background-attachment: fixed; 
+    margin: 10px 0px 10px 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+   display: grid;
+   grid-template-columns: 60vh 60vh 60vh;
+   grid-template-rows: 30vh 110vh 10vh;
+   grid-gap: 20px 20px;
+   grid-template-areas: "h h h"
+                        "al m ar"
+                        "f f f";
+    justify-content: center;
+    align-content: center;
+    
+}
+header
+{
+    background-color: lightgray;
+    grid-area: h;
+}
+#logo
+{
+    float: left
+}
+#menu
+{
+    float:right;
+    position: relative;
+    height: 100%;
+    width: 560px;
+    
+}
+#topmenu
+{
+    margin-left: 30px;
+}
+#topmenu ul
+{
+    
+    list-style-type: none;
+    width: 350px;
+    height: 30px;
+    
+}
+#topmenu ul li
+{
+    display: inline;
+}
+#topmenu a
+{
+    text-decoration: none;
+}
+.busca
+{
+    height: 41,2px;
+    position: absolute;
+    right: 0;
+    width: 350px;
+}
+.busca a
+{
+    position: absolute;
+    right: 50px;
+}
+#botmenu
+{
+    position: absolute;
+    bottom: 0;
+    width: 550px; 
+    
+}
+#botmenu ul
+{
+    list-style-type: none;
+    
+
+}
+#botmenu ul li
+{
+    display: inline;
+    margin: 10px;
+    background-color: lightgreen;
+    border: medium black solid;
+    padding: 10px;
+}
+#botmenu a
+{
+    text-decoration: none;
+}
+aside#left
+{
+    background-color: red;
+    grid-area: al;
+    width: 80%;
+    
+ 
+}
+main
+{
+    background-color: gray;
+    grid-area: m;
+    width: 467px;
+    margin-left: -100px;
+    padding-right: 160px;
+
+}
+article header
+{
+    background-color: gray;
+    width: 100%px;
+}
+
+#figasideleft
+{
+    float: left;
+}
+article header h1
+{
+    
+    display: inline;
+    
+    
+}
+article header a
+{
+    float: right;
+    
+}
+article
+{
+    width: 134%;
+    margin: 0 0 0 0;
+    border: solid 1px black;
+}
+article footer
+{
+    background-color: gray;
+}
+
+aside#right
+{
+    background-color: green;
+    
+    grid-area: ar;
+    width: 80%;
+    margin-left: 85px;
+    
+
+}
+#mainspotlight
+{
+    position: relative;
+}
+#main-spotlight-text
+{
+	position: absolute;
+	bottom: 35%;
+	right: 10%;
+	background-color: rgba(207, 165, 165, 0.75);
+	text-align: center;
+	padding: 5px 0px 5px 2px;
+    width: 180px;
+	border: solid 2px rgba(0, 0, 0, 1);
+}
+.small-spotlight
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	width: 19em;
+	background-color: rgba(204, 166, 166, 0.75);
+	height: 110px;
+}
+.small-spotlight figure
+{
+	margin: 5px 5px 5px 5px;
+	
+}
+
+
+
+footer
+{
+    background-color: white;
+    
+    grid-area: f;
+    
+}

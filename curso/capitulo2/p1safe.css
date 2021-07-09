@@ -1,0 +1,47 @@
+body
+{
+    background-image: linear-gradient(to bottom right,aquamarine, yellow, darkred);
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 90%;
+    height: 80%;
+    position: relative;
+    left: 5%;
+}
+header
+{
+    background-color: blue;
+    height: 100px;
+}
+aside#left
+{
+    background-color: red;
+    height: 600px;
+    width: 25%;
+    float: left;
+}
+main
+{
+    display: inline-block;
+    background-color: gray;
+    height: 600px;
+    width: 50%;
+}
+aside#right
+{
+    background-color: green;
+    height: 600px;
+    width: 25%;
+    float: right;
+}
+footer
+{
+    background-color: white;
+    clear: both;
+    height: 100px;
+}

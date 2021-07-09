@@ -9,16 +9,15 @@
     max-width: 1270px;
     position: relative;
 }
-header
-{
-    background-color: gray;
-}
+
 header h1, footer
 {
+    background-color: gray;
     color: white;
     width: 1300px;
     margin: -6px 4px;
     padding: 5px 10px;
+    
 }
 
 nav
@@ -68,7 +67,6 @@ section#principal h2
 
 footer
 {
-    background-color: gray;
     position: absolute;
     bottom: 0px;
 }

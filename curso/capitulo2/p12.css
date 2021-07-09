@@ -1,0 +1,394 @@
+body
+{
+	font-family: "Marcellus SC",'fallback', Helvetica, Arial, sans-serif;
+	font-style: normal;
+
+	background-color: black;
+	background-image: url("/ytaloazeredo.github.io/img/dbz.jpg");
+	background-attachment:fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+
+#wrapper
+{
+	display: grid;
+	grid-template:
+                 	"nav  main aside" auto
+                 	/ 25% 50% auto;
+	grid-column-gap: 0px;
+
+	margin: 0px 2% 0% 2%;
+
+	padding: 2% 2% 2% 2%;
+
+	border-top: solid 2px rgba(171, 150, 111, 1);
+	border-bottom: solid 2px rgba(171, 150, 111, 1);
+	border-radius: 10px;
+	background-color: rgba(61, 61, 61, 0.75);
+}
+
+article
+{
+	display: grid;
+	grid-template: 	"head head 	head" auto
+                 	"cont main 	aside" auto
+                 	"cont lower aside" auto
+                 	"foot foot 	foot" auto
+                 	/ auto auto auto;
+}
+header
+{
+    grid-area: head;
+	display: grid;
+	grid-template: 	"foot 	foot 	top" auto
+					"title 	. 		aside" auto
+					"cont	. 		." auto
+					/ 30% 20% 50%;
+	margin: 0% 2% 2% 2%;
+}
+
+#page-footer
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: rgba(51, 51, 51, 1);
+
+
+	margin: 2% 2% 0% 2%;
+	border-top: solid 2px;
+}
+
+.header-main
+{
+	grid-area: title;
+}
+
+#whats-new figure
+{
+	grid-area: cont;
+}
+
+.header-aside
+{
+	grid-area: aside;
+	text-align: right;
+}
+
+header ul
+{
+	grid-area: top;
+	text-align: right;
+}
+
+.inline-list li
+{
+	display: inline-block;
+	padding: 2px 10px 2px 10px;
+	border-right: solid rgba(171, 150, 111, 1) 3px;
+}
+
+.buttoned-list a
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-decoration: none;
+	border: solid black 3px;
+	background-color: rgba(51, 51, 51, 1);
+	border-radius: 2px;
+	transition: border-radius 0.25s, color 1s, text-shadow 1s;
+}
+
+.buttoned-list a:hover
+{
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px rgba(30, 30, 30, 1);
+	border: solid rgba(201, 180, 141, 1) 3px;
+	border-radius: 20px;
+}
+
+.inline-list .last-item
+{
+	border-right-style: none;
+}
+
+nav
+{
+	grid-area: nav;
+}
+
+#top-menu ul
+{
+	text-align: left;
+}
+
+#top-menu li
+{
+	display: inline-block;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 20%;
+	margin-left: 10px;
+}
+
+#top-menu a
+{
+	display: block;
+	width: 100%;
+	height: 1.2em;
+	min-width: 100px;
+	max-width: 200px;
+	padding: 2px 0px 2px 0px;
+}
+
+#sidebar
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+#sidebar-menu
+{
+	padding-left: 0px;
+	width: 80%;
+	max-width: 350px;
+}
+#sidebar-menu li
+{
+	padding: 2px 0px 2px 0px;
+	margin-top: 5px;
+}
+#sidebar-menu a
+{
+	display: block;
+	box-sizing: content-box;
+	padding: 4px 10px 4px 5px;
+}
+#sidebar img
+{
+  	object-position: 50% 0%;
+	border: solid 2px rgba(171, 150, 111, 1);
+}
+
+#logo:hover img, #sidebar img:hover
+{
+	filter: brightness(1.5);
+}
+
+#most-popular ul
+{
+	border: solid rgba(171, 150, 111, 1) 2px;
+	background-color: rgba(0, 0, 0, 0.75);
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+	width: 100%;
+	padding: 10px 15px 10px 5px;
+}
+#most-popular li:before
+{
+	content: " ";
+	color: rgba(171, 150, 111, 1);
+	padding-right: 8px;
+	width: 100%;
+}
+#most-popular li:hover:before
+{
+	content: ">";
+	color: rgba(171, 150, 111, 1);
+	padding-right: 3px;
+}
+
+article
+{
+	background-color: rgba(51, 51, 51, 0.75);
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+
+	padding: 5px 15px 15px 5px;
+	margin: 10px 5px 10px 5px;
+
+	border-top: solid rgba(171, 150, 111, 1) 5px;
+	border-bottom: solid rgba(171, 150, 111, 1) 5px;
+
+	border-radius: 5px;
+
+	width: 90%;
+}
+
+article header
+{
+	border-bottom: solid 2px rgba(211, 190, 151, 1);
+	padding: 0px 10px 0px 10px;
+	border-radius: 20px;
+}
+
+article p
+{
+	grid-area: lower;
+}
+
+main, #whats-new h2
+{
+    grid-area: main;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+aside
+{
+    grid-area: aside;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0px 15px 0px 0px;
+}
+
+#main-spotlight
+{
+	position: relative;
+}
+#main-spotlight-text
+{
+	position: absolute;
+	bottom: 15%;
+	right: 12%;
+	background-color: rgba(0, 0, 0, 0.75);
+	text-align: center;
+	padding: 5px 2px 5px 2px;
+	border: solid 2px rgba(0, 0, 0, 1);
+}
+
+.small-spotlight
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	width: 19em;
+	background-color: rgba(51, 51, 51, 0.75);
+	height: 110px;
+}
+
+.small-spotlight figure
+{
+	margin: 5px 5px 5px 5px;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+img
+{
+	object-fit: cover;
+	transition: filter 0.5s, background 0.5s;
+}
+
+.spotlight:hover img
+{
+	filter: brightness(1.10) contrast(1.20);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.date-list
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 2% 0px 2%;
+}
+.date-list ol
+{
+	min-width: 10em;
+	padding: 0px 2px 0px 2px;
+}
+.date-list li
+{
+	display: table-row;
+	height: 2em;
+	max-height: 3em;
+	text-overflow: ellipsis;
+}
+
+footer, #top-menu
+{
+	grid-area: foot;
+}
+
+
+p, ol li
+{
+	color: rgba(180, 178, 176, 1);
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
+}
+
+a
+{
+	color: rgba(171, 150, 111, 1);
+	text-decoration: none;
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+p
+{
+	padding: 2px 2px 2px 2px;
+	margin: 2px 2px 2px 2px;
+	text-indent: 1em;
+}
+
+h1, h2, h3, h4
+{
+	text-align: center;
+	color: rgba(220, 218, 216, 1);
+	text-shadow: 2px 2px 3px rgba(180, 178, 176, 0.5);
+	margin: 5px 5px 5px 5px;
+	transition: color 0.75s, text-shadow 0.75s;
+}
+
+article:hover h1, article:hover h2, .spotlight:hover h3, .spotlight:hover h4, .buttoned-list a:hover
+{
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 2px 2px 8px rgba(200, 198, 196, 0.75);
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+input
+{
+	box-shadow: 2px 2px 8px black;
+}
+.header-aside a
+{
+	text-shadow: 2px 2px 8px black;
+}
+
+input[type=text]
+{
+	text-align: right;
+	color: white;
+	border-radius: 5px;
+	background-color: rgba(51, 51, 51, 0.5);
+	border-color: rgba(171, 150, 111, 1);
+}
