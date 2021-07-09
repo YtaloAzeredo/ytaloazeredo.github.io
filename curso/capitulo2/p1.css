@@ -187,10 +187,31 @@ aside#right
 
 
 
-footer
+#footer-page
 {
     background-color: white;
-    
     grid-area: f;
+    position: relative;
     
+}
+#footer-page ul li
+{
+    display: inline;
+    margin: 5px;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+#footer-page p
+{
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#backtop
+{
+    position: absolute;
+    right: 50%;
+    top: 0;
+
 }
