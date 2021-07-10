@@ -1,6 +1,6 @@
 body
 {
-    background-image: linear-gradient(to bottom right,aquamarine, yellow, darkred);
+    background-image: linear-gradient(to bottom right,gray, aquamarine, yellow);
     background-attachment: fixed; 
     margin: 10px 0px 10px 0px;
     padding: 0;
@@ -17,16 +17,27 @@ body
                         "f f f";
     justify-content: center;
     align-content: center;
+    background-color: rgba(240, 143, 143, 0.664);
     
 }
-header
+#inicio 
 {
-    background-color: lightgray;
+    background-color: rgba(255, 255, 255, 0.473);
     grid-area: h;
+    border-radius: 40px;
+    position: relative;
 }
 #logo
 {
-    float: left
+    float: left;
+    border: 7px lightgreen solid;
+    border-radius: 10px;
+    margin: 5px 0 -6px 90px;
+    padding: 0 0 0 -30px;
+}
+#inicio img
+{
+    margin: 0 0 -6px 0;
 }
 #menu
 {
@@ -44,13 +55,21 @@ header
 {
     
     list-style-type: none;
-    width: 350px;
+    width: 500px;
     height: 30px;
-    
+
 }
 #topmenu ul li
 {
     display: inline;
+    margin: 10px;
+    border-right: medium white solid;
+    border-left: medium white solid;
+}
+#a3
+{
+    background-color: black;
+    color: white;
 }
 #topmenu a
 {
@@ -63,6 +82,11 @@ header
     right: 0;
     width: 350px;
 }
+.find_school
+{
+    box-shadow: 2px 2px gray;
+    text-shadow: 2px 2px 8px gray;
+}
 .busca a
 {
     position: absolute;
@@ -72,77 +96,194 @@ header
 {
     position: absolute;
     bottom: 0;
-    width: 550px; 
+    width: 750px; 
+    margin: 10px;
+    right: 0px;
+    padding: 10px;
     
 }
 #botmenu ul
 {
     list-style-type: none;
-    
-
 }
 #botmenu ul li
 {
     display: inline;
     margin: 10px;
-    background-color: lightgreen;
-    border: medium black solid;
-    padding: 10px;
+    background-color: lightgray;
+    border: medium white solid;
+    padding: 10px 0px 10px 0px;
 }
 #botmenu a
 {
+    display: inline-block;
     text-decoration: none;
+    padding: 10px 46px 10px 10px;    
+    color: black;
 }
+#botmenu a:hover, #botmenu li:hover
+{
+    border-radius: 15px;
+    background-color: lightgreen;
+    color: blue;
+}
+#botmenu a:active, #sidebar-menu a:active
+{
+    color: darkred;
+}
+
 aside#left
 {
-    background-color: red;
+    background-color: rgba(168, 217, 230, 0.432);
     grid-area: al;
     width: 80%;
+    border-radius: 20px;
+}
+#left img
+{
+    border: 5px lightgreen solid;
+    border-radius: 15px;
+}
+#sidebar-menu
+{
+    list-style-type: none;
+}
+#sidebar-menu li
+{
+    border: medium white solid;
+    margin: 10px 0 10px -40px;
+    width: 335px;
+    height: 40px;
+    background-color: lightgrey;
     
- 
+}
+#sidebar-menu a:hover, #sidebar-menu li:hover
+{
+    background-color: lightgreen;
+    color: blue;
+    border-radius: 10px;
+}
+#botmenu a:active, #sidebar-menu a:active
+{
+    color: darkred;
+}
+#sidebar-menu a
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    padding: 9px 0 8px 0;
+}
+#sidebar-menu2
+{
+    list-style-type:'>  ';
+    border: medium white solid;
+    background-color: lightgray;
+    border-radius: 5px;
+    
+}
+#sidebar-menu2 a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+#sidebar-menu2 li
+{
+    margin: 10px 0 10px 0;
+}
+#sidebar-menu2 li:hover, #sidebar-menu2 a:hover
+{
+    color: blue;
+}
+#left h2
+{
+    color: white;
+    text-shadow: 5px 3px 4px black;
+    text-align: center;
 }
 main
 {
-    background-color: gray;
+    background-color: rgba(168, 217, 230, 0.432);
     grid-area: m;
     width: 467px;
     margin-left: -100px;
     padding-right: 160px;
-
+    border-radius: 20px;
 }
+
 article header
 {
-    background-color: gray;
-    width: 100%px;
+    text-shadow: 5px 3px 10px black;
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+    width: 95%;
+    border-bottom: medium white solid;
+    border-radius: 5px;
 }
-
+article header a
+{
+    color: black;
+}
+article header a:hover
+{
+    color: lightgreen;
+}
 #figasideleft
 {
     float: left;
 }
 article header h1
 {
-    
     display: inline;
-    
-    
 }
 article header a
 {
     float: right;
-    
 }
+article ol, article ul
+{
+    list-style: none;
+}
+#date-list
+{
+    clear: both;
+}
+#whatsnew ol
+{
+    float:left;
+    margin-top: -1px;
+    color: gray;
+}
+#date-list ul a
+{
+    color: black;
+    text-decoration: none;
+}
+#date-list ul a:hover
+{
+    color: lightgreen;
+    text-decoration: underline;
+}
+
 article
 {
     width: 134%;
     margin: 0 0 0 0;
-    border: solid 1px black;
+    border: solid 1px white;
+    border-radius: 20px;
 }
-article footer
-{
-    background-color: gray;
-}
+/*
 
+
+parei aqui
+
+
+*/
 
 aside#right
 {
@@ -215,4 +356,9 @@ aside#right
     right: 50%;
     top: 0;
 
+}
+#footer-page a
+{
+    text-decoration: none;
+    color: black;
 }
