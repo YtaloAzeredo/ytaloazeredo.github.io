@@ -1,3 +1,4 @@
+
 body
 {
     background-image: linear-gradient(to bottom right,rgba(128, 128, 128, 0.993), rgba(57, 131, 112, 0.712), rgba(207, 207, 140, 0.884));
@@ -30,6 +31,8 @@ body
     border-bottom-left-radius: 15px;
     margin-left: -6px;
     position: relative;
+    left: -6%;
+    width: 213vh;
 }
 #logo
 {
@@ -436,7 +439,11 @@ hr
 #footer-page
 {
     grid-area: f;
+    position: relative;
+    left: -6%;
+    width: 213vh;
     background-color: rgba(255, 255, 255, 0.473);
+    
     margin-bottom: -30px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -446,7 +453,7 @@ hr
     grid-template-areas: ". fph ."
                          "fpf fpf fpf";
     
-    margin-left: -6px;
+    
     
                         
 }
@@ -518,8 +525,9 @@ hr
     height: 100px;
     background-color: rgba(0, 0, 0, 0.329);
     top: 220px;
-    left: 80px;
-    width: 89%;
+    left: 60px;
+    width: 1360px;
     height: 790px;
     border-radius: 20px;
+    padding: 0 10px 0 10px;
 }
