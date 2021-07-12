@@ -1,6 +1,6 @@
 body
 {
-    background-image: linear-gradient(to bottom right,gray, aquamarine, yellow);
+    background-image: linear-gradient(to bottom right,rgba(128, 128, 128, 0.993), rgba(57, 131, 112, 0.712), rgba(207, 207, 140, 0.884));
     background-attachment: fixed; 
     margin: 10px 0px 10px 0px;
     padding: 0;
@@ -8,29 +8,33 @@ body
 }
 .container
 {
+    position: relative;
    display: grid;
    grid-template-columns: 60vh 60vh 60vh;
    grid-template-rows: 30vh 110vh 10vh;
-   grid-gap: 20px 20px;
+   grid-gap: 20px 35px;
    grid-template-areas: "h h h"
                         "al m ar"
                         "f f f";
     justify-content: center;
     align-content: center;
-    background-color: rgba(240, 143, 143, 0.664);
-    
+    margin-top: -10px;
+    z-index: 2;
 }
+
 #inicio 
 {
     background-color: rgba(255, 255, 255, 0.473);
     grid-area: h;
-    border-radius: 40px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: -6px;
     position: relative;
 }
 #logo
 {
     float: left;
-    border: 7px lightgreen solid;
+    border: 7px white solid;
     border-radius: 10px;
     margin: 5px 0 -6px 90px;
     padding: 0 0 0 -30px;
@@ -47,34 +51,44 @@ body
     width: 560px;
     
 }
-#topmenu
-{
-    margin-left: 30px;
-}
+
 #topmenu ul
 {
-    
+    display: inline-block;
     list-style-type: none;
-    width: 500px;
+    width: 630px;
     height: 30px;
-
+    padding: 0;
+    margin-left: -78px;
 }
 #topmenu ul li
 {
-    display: inline;
+    display: inline-block;
     margin: 10px;
     border-right: medium white solid;
     border-left: medium white solid;
-}
-#a3
-{
-    background-color: black;
-    color: white;
+    
 }
 #topmenu a
 {
     text-decoration: none;
+    text-shadow: 2px 2px 8px gray;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    
 }
+#topmenu a:hover
+{
+    text-decoration:underline;
+    
+}
+#a3
+{
+    color: white;
+    background-color: black;
+    
+}
+
 .busca
 {
     height: 41,2px;
@@ -96,36 +110,36 @@ body
 {
     position: absolute;
     bottom: 0;
-    width: 750px; 
-    margin: 10px;
     right: 0px;
-    padding: 10px;
-    
+    width: 900px; 
 }
 #botmenu ul
 {
     list-style-type: none;
+    
 }
 #botmenu ul li
 {
-    display: inline;
+    display: inline-block;
     margin: 10px;
     background-color: lightgray;
     border: medium white solid;
-    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
 }
 #botmenu a
 {
     display: inline-block;
     text-decoration: none;
-    padding: 10px 46px 10px 10px;    
+    padding: 5px 46px 10px 46px;    
     color: black;
+    
 }
 #botmenu a:hover, #botmenu li:hover
 {
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: lightgreen;
-    color: blue;
+    color: white;
+    text-shadow: 2px 2px 8px gray;
 }
 #botmenu a:active, #sidebar-menu a:active
 {
@@ -134,14 +148,28 @@ body
 
 aside#left
 {
-    background-color: rgba(168, 217, 230, 0.432);
+    
     grid-area: al;
     width: 80%;
+    
     border-radius: 20px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "asdl1"
+                         "asdl2";
+                         
+}
+#asdl1
+{
+    grid-area: asdl1;
+}
+#most-popular
+{
+    grid-area: asdl2;
 }
 #left img
 {
-    border: 5px lightgreen solid;
+    border: 5px white solid;
     border-radius: 15px;
 }
 #sidebar-menu
@@ -150,18 +178,18 @@ aside#left
 }
 #sidebar-menu li
 {
-    border: medium white solid;
+    border: white 1px solid;
     margin: 10px 0 10px -40px;
-    width: 335px;
-    height: 40px;
     background-color: lightgrey;
+    border-radius: 50px;
     
 }
 #sidebar-menu a:hover, #sidebar-menu li:hover
 {
     background-color: lightgreen;
-    color: blue;
-    border-radius: 10px;
+    color: white;
+    border-radius: 5px;
+    text-shadow: 2px 2px 8px gray;
 }
 #botmenu a:active, #sidebar-menu a:active
 {
@@ -173,7 +201,7 @@ aside#left
     color: black;
     display: block;
     width: 100%;
-    height: 60%;
+    height: 100%;
     text-align: center;
     padding: 9px 0 8px 0;
 }
@@ -197,7 +225,8 @@ aside#left
 }
 #sidebar-menu2 li:hover, #sidebar-menu2 a:hover
 {
-    color: blue;
+    color: white;
+    text-shadow: 2px 2px 8px gray;
 }
 #left h2
 {
@@ -207,12 +236,18 @@ aside#left
 }
 main
 {
-    background-color: rgba(168, 217, 230, 0.432);
+    
     grid-area: m;
     width: 467px;
     margin-left: -100px;
     padding-right: 160px;
     border-radius: 20px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: "art1"
+                         "art2"
+                         "art3";
+                         grid-gap: 5px;
 }
 
 article header
@@ -253,62 +288,126 @@ article ol, article ul
 {
     clear: both;
 }
-#whatsnew ol
+#whatsnew
+{
+    grid-area: art1;
+}
+#whatsnew ol, #date-list2 ol
 {
     float:left;
-    margin-top: -1px;
-    color: gray;
+    margin-top: 0px;
+    margin-right: 10px;
+    color: rgb(94, 92, 92);
+    
 }
-#date-list ul a
+#date-list ul a, #date-list2 ul a
 {
     color: black;
-    text-decoration: none;
 }
-#date-list ul a:hover
+#date-list ul a:hover, #date-list2 ul a:hover
 {
     color: lightgreen;
-    text-decoration: underline;
+    text-shadow: 2px 2px 8px gray;
 }
 
 article
 {
     width: 134%;
-    margin: 0 0 0 0;
     border: solid 1px white;
     border-radius: 20px;
+    background-color: rgba(168, 217, 230, 0.432);
 }
-/*
-
-
-parei aqui
-
-
-*/
+#newsticker
+{
+    grid-area: art2;
+}
+#newsticker header a
+{
+    background-color: green;
+    display: block;
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    border: medium black solid;
+    border-radius: 5px;
+}
+#newsticker aside
+{
+    float: right;
+    display: block;
+    width: 25px;
+    height: 60px;
+    margin-right: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+#newsticker aside a
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0 5px 0;
+    background-color: green;
+    border: medium black solid;
+    border-radius: 5px;
+}
+#newsticker aside a:hover, #newsticker header a:hover
+{
+    background-color: lightgreen;
+    color: black;
+}
+#newsticker p
+{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+#calendar
+{
+    grid-area: art3;
+}
 
 aside#right
 {
-    background-color: green;
     
+    border-radius: 20px;
     grid-area: ar;
     width: 80%;
     margin-left: 85px;
-    
+    display: grid;
+    grid-template-rows: 3fr 1fr 3fr 1fr 3fr 2fr 2fr;
+    grid-template-areas: "spot1"
+                         "."
+                         "spot2"
+                         "."
+                         "spot3"
+                        "."
+                        ".";
+}
+#main-spotlight
+{
+    grid-area: spot1;
+    position: relative;
 
 }
-#mainspotlight
+#small-spotlight1
 {
-    position: relative;
+    grid-area: spot2;
+}
+#small-spotlight2
+{
+    grid-area: spot3;
 }
 #main-spotlight-text
 {
 	position: absolute;
-	bottom: 35%;
-	right: 10%;
+	bottom: 40%;
+	right: 23%;
 	background-color: rgba(207, 165, 165, 0.75);
 	text-align: center;
 	padding: 5px 0px 5px 2px;
     width: 180px;
-	border: solid 2px rgba(0, 0, 0, 1);
+	border: solid 2px black;
 }
 .small-spotlight
 {
@@ -316,49 +415,111 @@ aside#right
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-
-	width: 19em;
-	background-color: rgba(204, 166, 166, 0.75);
-	height: 110px;
+	width: 310px;
+    height: 110px;
+	background-color: lightgray;
+    border: solid 2px white;
+    border-radius: 15px;
+	margin-left: 12px;
 }
 .small-spotlight figure
 {
 	margin: 5px 5px 5px 5px;
-	
 }
-
-
-
+hr
+{
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, white, transparent); 
+}
 #footer-page
 {
-    background-color: white;
     grid-area: f;
-    position: relative;
+    background-color: rgba(255, 255, 255, 0.473);
+    margin-bottom: -30px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: grid;
+    grid-template-columns: 3fr  1fr  3fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: ". fph ."
+                         "fpf fpf fpf";
     
-}
-#footer-page ul li
-{
-    display: inline;
-    margin: 5px;
-    border-left: solid 1px black;
-    border-right: solid 1px black;
-}
-#footer-page p
-{
+    margin-left: -6px;
     
-    position: absolute;
-    top: 0;
-    right: 0;
+                        
 }
-#backtop
+.fprow1
 {
-    position: absolute;
-    right: 50%;
-    top: 0;
-
+    grid-area: fph;            
+}
+.fprow2
+{
+    grid-area: fpf;
+}
+#footer-page ul
+{
+    display: inline-block;
+    margin-left: -30px;
 }
 #footer-page a
 {
     text-decoration: none;
+}
+#footer-page ul li
+{
+    display: inline-block;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    margin: 0 10px;
+}
+#footer-page ul li a
+{
+    margin: 0 10px;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    
+}
+#footer-page ul li a:hover
+{
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+#backtop
+{
+    color: white;
+    background-color: green;
+    border: 3px black solid;
+    border-radius: 5px;
+    width: 35%;
+    text-align: center;
+    margin-top: 2px;
+    margin-left: 47%;
+}
+#backtop:hover
+{
+    background-color: lightgreen;
     color: black;
+}
+#footer-page p
+{
+    display: inline-block;
+    color: gray;
+    float:right;
+    margin-right: 40px;
+}
+.icont
+{
+    position: absolute;
+    
+    z-index: 1;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.329);
+    top: 220px;
+    left: 80px;
+    width: 89%;
+    height: 810px;
+    border-radius: 20px;
 }
