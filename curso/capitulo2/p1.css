@@ -260,8 +260,7 @@ article header
     text-align: left;
     margin-left: 10px;
     width: 95%;
-    border-bottom: medium white solid;
-    border-radius: 5px;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.719), transparent); 
 }
 article header a
 {
@@ -443,7 +442,7 @@ hr
     left: -6%;
     width: 213vh;
     background-color: rgba(255, 255, 255, 0.473);
-    margin-left: -1px;
+    margin-left: -3px;
     margin-bottom: -30px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
