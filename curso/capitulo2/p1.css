@@ -511,7 +511,7 @@ hr
 }
 #footer-page p
 {
-    display: inline;
+    display: block;
     color: gray;
     float: right;
     margin-right: 40px;
