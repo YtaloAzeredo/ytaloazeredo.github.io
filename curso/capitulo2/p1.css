@@ -511,17 +511,15 @@ hr
 }
 #footer-page p
 {
-    display: inline-block;
+    display: inline;
     color: gray;
-    float:right;
+    float: right;
     margin-right: 40px;
 }
 .icont
 {
     position: absolute;
-    
     z-index: 1;
-    height: 100px;
     background-color: rgba(0, 0, 0, 0.329);
     top: 220px;
     left: 60px;
