@@ -1,4 +1,10 @@
-
+body
+{
+    background-image: linear-gradient(to bottom right,rgba(128, 128, 128, 0.993), rgba(57, 131, 112, 0.712), rgba(207, 207, 140, 0.884));
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
 #content
 {
     margin: 40px 40px 70px 40px;
@@ -10,14 +16,14 @@
     position: relative;
 }
 
-header h1, footer
+header h1, #page-footer
 {
     background-color: gray;
     color: white;
     width: 1300px;
     margin: -6px 4px;
     padding: 5px 10px;
-    
+    text-align: left;
 }
 
 nav
@@ -65,7 +71,7 @@ section#principal h2
     margin-top: 10px;
 }
 
-footer
+#page-footer
 {
     position: absolute;
     bottom: 0px;
@@ -83,4 +89,16 @@ nav a:hover
 nav a:active
 {
     color:darkred;
+}
+#page-footer-ex10
+{
+    background: none;
+    position: relative;
+    left: -44%;
+    bottom: 5%;
+    text-align: left;
+}
+#page-top
+{
+    text-align: center;
 }

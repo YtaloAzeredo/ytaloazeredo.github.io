@@ -4,14 +4,29 @@ body
     background-attachment: fixed;
     color: white;
     text-shadow: 2px 2px 8px black;
+    text-align: center;
 }
 ol
 {
     list-style-type: none;
+    padding: 0;
 }
 .page-footer
 {
     position: relative;
     left: 0;
     bottom: 0;
+}
+li
+{
+    display: inline;
+    margin-left: 15px;
+}
+a
+{
+    color: lightgreen;
+}
+a:hover
+{
+    color: white;
 }
