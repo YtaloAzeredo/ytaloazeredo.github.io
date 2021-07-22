@@ -2,4 +2,13 @@ body
 {
     background-image: linear-gradient(to bottom right,rgba(128, 128, 128, 0.993), rgba(57, 131, 112, 0.712), rgba(207, 207, 140, 0.884));
     background-attachment: fixed;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    text-align: center;
+}
+footer .page-footer
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
