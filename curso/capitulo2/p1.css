@@ -20,7 +20,7 @@ body
     justify-content: center;
     align-content: center;
     margin-top: -10px;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 #inicio 
@@ -150,7 +150,7 @@ aside#left
     
     grid-area: al;
     width: 80%;
-    
+    background-color: rgba(168, 217, 230, 0.247);
     border-radius: 20px;
     display: grid;
     grid-template-rows: 2fr 1fr;
@@ -367,7 +367,7 @@ article
 
 aside#right
 {
-    
+    background-color: rgba(168, 217, 230, 0.247);
     border-radius: 20px;
     grid-area: ar;
     width: 80%;
@@ -507,7 +507,7 @@ hr
     float: right;
     margin-right: 40px;
 }
-.icont
+/* .icont
 {
     position: absolute;
     z-index: 1;
@@ -518,4 +518,4 @@ hr
     height: 790px;
     border-radius: 20px;
     padding: 0 10px 0 10px;
-}
+} */
