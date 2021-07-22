@@ -29,10 +29,6 @@ body
     grid-area: h;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    margin-left: -1px;
-    position: relative;
-    left: -6%;
-    width: 213vh;
 }
 #logo
 {
@@ -438,11 +434,7 @@ hr
 #footer-page
 {
     grid-area: f;
-    position: relative;
-    left: -6%;
-    width: 213vh;
     background-color: rgba(255, 255, 255, 0.473);
-    margin-left: -3px;
     margin-bottom: -30px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
