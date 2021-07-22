@@ -12,3 +12,15 @@ body
     left: 0;
     bottom: 5%;
 }
+#page-footer-ex3
+{
+    background: none;
+    position: relative;
+    left: -44%;
+    bottom: 5%;
+}
+.table-ex5
+{
+    position: relative;
+    left: 42%;
+}
