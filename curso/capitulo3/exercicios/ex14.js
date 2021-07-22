@@ -4,7 +4,7 @@ function Comparison()
     var dateIn = prompt("Insira uma data:");
     var tp = new Date( Date.now() - new Date(dateIn) );
     
-    var days = tp.getDate() - 1;
+    var days = tp.getDate();
     var months = tp.getMonth();
     var years = tp.getFullYear() - 1970;
 
