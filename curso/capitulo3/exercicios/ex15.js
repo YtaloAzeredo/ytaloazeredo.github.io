@@ -10,7 +10,7 @@ function Validator()
 
     //alert(ponto.lenght);
 
- 	arroba.length == 2 && ponto.length == 2 && arroba.length[0] > 0  && arroba.length[1] > 4 && ponto.length[0] > 0 && ponto.length[1] > 0 ?
+ 	arroba.length == 2 && ponto.length == 2 && arroba.length[0] > 0  && arroba.length[1] > 2 && ponto.length[0] > 0 && ponto.length[1] > 0 ?
 	(
 		alert("E-mail válido.")
     )
