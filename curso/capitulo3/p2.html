@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/curso/capitulo3/p2.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/curso/background.css">
+    <title>Capítulo 3</title>
+</head>
+<body>
+    <h1>Capítulo 3</h1>
+    <h2>Avaliação 2</h2>
+	<form id="formulario">
+        <br><br>
+        <h2>Reserva de Hotel</h2>
+		<label for="nome">Nome:</label><input type="text" name="nome" id="nome"><br>
+		<label for="telefone">Telefone:</label><input type="text" name="telefone" id="telefone"><br>
+		<br>
+		<label for="data_entrada">Data de chegada:</label><input type="date" name="data_entrada" id="data_entrada"><br>
+		<label for="data_saida">Data de Saída:</label><input type="date" name="data_saida" id="data_saida"><br>
+		<br>
+        <label for="tipo-quarto">Tipo de Quarto:</label><br>
+		<select id="tipo-quarto">
+            <option value="0" selected="selected">Escolha o tipo de quarto</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br>
+        <br>
+        <label for="crianca">Crianças com menos de 5 anos:</label><br>
+		<select id="crianca">
+            <option value="0" selected="selected">Insira o número de crianças menores de 5 anos</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br>
+        <br>
+        <input type="button" id="confirm" value="Confirmar Reserva" onclick="calcularValor()">
+        <br><br>
+
+        
+
+	</form>
+</body>

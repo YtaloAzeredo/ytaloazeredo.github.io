@@ -1,12 +1,12 @@
 function Validator()
 {
-	var email = prompt("Digite um E-Mail:");
+	var email = prompt("Digite um E-Mail:")
 
-	var arroba = email.split("@");
+	var arroba = email.split("@")
 
     //alert(arroba.length);
 
-	var ponto = email.split(".");
+	var ponto = email.split(".")
 
     //alert(ponto.lenght);
 
@@ -18,4 +18,5 @@ function Validator()
 	(
 		alert("E-mail Inválido")
     )
-};
+	
+}

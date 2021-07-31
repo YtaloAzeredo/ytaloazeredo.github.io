@@ -1,11 +1,11 @@
 
-function Comparison()
-{
-    var n = prompt("Digite um numero");
+function Comparison() {
+    const n = prompt("Digite um numero")
     
-    if(n % 2 == 0)
-        alert("Par");
-    else 
-        alert("Impar");
-    
+    Alertar(n%2 === 0 ? "Par" : "Impar")
+
+}
+
+const Alertar = (message) => {
+    alert(message)
 }
