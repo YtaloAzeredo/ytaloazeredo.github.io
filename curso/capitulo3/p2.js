@@ -1,24 +1,4 @@
 
-	/* function verDias()
-	{
-        
-        //var dataEntrada = new Date( ( document.getElementById('data_entrada').val() ).getTime() );
-        //var dataSaida = new Date( ( document.getElementById('data_saida').val() ) .getTime() );
-        //var dataResultado = new Date( Date(dataEntrada) - Date(dataSaida) );
-        //const dataFinal = dataResultado.getDate(); 
-		//var data = new Date($('#data').val()).getTime();
-		//var data_saida = new Date($('#data_saida').val()).getTime();
-        const dataEntrada = new Date (document.querySelector("#data_entrada"));
-        
-        const dataSaida = new Date (document.querySelector("#data_saida"));
-        
-        const dataResultado = new Date ( Date (dataSaida) - Date (dataEntrada) );
-        
-
-        
-		return  ( dataResultado.getDays() ) ;
-	} */
-
     function verDias()
 	{
 		var dataEntrada = new Date(document.getElementById("data_entrada").value );
